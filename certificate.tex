@@ -37,7 +37,7 @@
 \TileWallPaper{1\paperwidth}{1\paperheight}{border}
 %
 \DTLforeach{names}{
-\dg=degree, \name=Name, \dgn=Dgn, \sub=subject, \inst=inst, \place=place}{
+\dg=honorific, \name=name, \dgn=position, \sub=subject, \inst=employer, \place=place, \period=date, \teacher=teacher, \director=director}{
 %
 \noindent
 \begin{minipage}[l]{1.5in}
@@ -81,10 +81,10 @@
 \begin{center}{%\doublespacing 
 Настоящият сертификат удостоверява, че
 \vspace{0.2cm}\\
-{{\Huge\sffamily\bfseries\color{name}{\dg. \MakeUppercase{\name}}}} 
+{{\Huge\sffamily\bfseries\color{name}{\dg \MakeUppercase{\name}}}} 
 \vspace{0.2cm}\\
-завърши успешно  ускорен курс по\\ \emph{\color{phd}{\Large \bf `` Анализ на данни с R''}},\\ организиран от ЦО - БАН в гр. София, в периода
-16 - 20 април 2018 г.}
+завърши успешно  ускорен курс по\\ \emph{\color{phd}{\Large \bf ``Анализ на данни с R''}},\\ организиран от ЦО - БАН в гр. София, в периода
+\period}
 \end{center}
 
 \noindent
@@ -92,11 +92,11 @@
 {\singlespacing
 \vfil
 \begin{minipage}[l]{2.8in}
- \sigskip \signature{}{инж. д-р Тодор Балабанов \\ Лектор }
+ \sigskip \signature{}{\teacher \\ Лектор }
 \end{minipage}
 \hfill
 \begin{minipage}[r]{2.8in}
-\sigskip \signature{}{проф. д.б.н. Евдокия Пашева \\ Директор }
+\sigskip \signature{}{\director \\ Директор }
 \end{minipage}}
 
 \pagebreak
